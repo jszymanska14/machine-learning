@@ -23,3 +23,33 @@ Porównujemy przewidziane wartości y_pred z rzeczywistymi wartościami y_test, 
 Obliczamy procent poprawnych odpowiedzi i wyświetlamy go na ekranie.
 
 Ten projekt ilustruje proces klasyfikacji przy użyciu algorytmu Perceptron i może być wykorzystany do oceny, czy guzy nowotworowe są złośliwe czy łagodne na podstawie podanych cezji.
+
+2. Linear Regression with Python
+
+   Opis projektu
+
+Ten projekt przedstawia implementację prostego modelu regresji liniowej za pomocą języka Python. Regresja liniowa jest używana do przewidywania liniowych zależności między zmiennymi niezależnymi a zmienną zależną. 
+W tym przypadku model został zaimplementowany w klasie LinearRegression.
+
+Funkcje i parametry
+
+predict(self, x): Funkcja ta przyjmuje dane x i zwraca przewidywane wartości na podstawie wytrenowanego modelu regresji.
+fit(self, X, y): Funkcja ta służy do trenowania modelu na danych treningowych. Przyjmuje dane X i wartości docelowe y oraz aktualizuje wagi modelu w procesie uczenia.
+get_activation(self, x): Funkcja ta oblicza aktywację na podstawie danych x i aktualnych wag modelu.
+Parametry konstruktora:
+
+eta: Współczynnik uczenia (domyślnie 0.10).
+epochs: Liczba epok treningu (domyślnie 50).
+is_verbose: Flaga mówiąca, czy wyświetlać informacje diagnostyczne podczas treningu (domyślnie False).
+
+Model regresji liniowej jest trenowany na danych dotyczących cen mieszkań w Bostonie (plik "housing.data"). Dane są wczytywane za pomocą biblioteki pandas, a następnie wybierane są kolumny "LSTAT" jako cecha niezależna (X) i "MEDV" jako cecha zależna (y).
+
+Dane są następnie standaryzowane za pomocą StandardScaler w celu ułatwienia uczenia modelu.
+
+Dane są podzielone na zbiór treningowy i testowy w stosunku 80/20 za pomocą train_test_split.
+
+Następnie tworzony jest obiekt klasy LinearRegression z określonymi parametrami (współczynnik uczenia i liczba epok), a model jest trenowany na danych treningowych.
+
+
+
+
