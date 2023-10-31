@@ -4,7 +4,7 @@ Breast Cancer Classification using Perceptron
 
 Opis projektu
 
-Projekt ten wykorzystuje algorytm Perceptron do klasyfikacji guzów nowotworowych jako złośliwych lub łagodnych na podstawie cezji opisujących te guzy. Dane opisują stan guzów nowotworowych, a w kolumnie "diagnosis" zawiera informację o tym, czy guz jest złośliwy (M) czy łagodny (B).
+Projekt ten wykorzystuje algorytm Perceptron do klasyfikacji guzów nowotworowych jako złośliwych lub łagodnych na podstawie opisu cechującego te guzy. Dane opisują stan guzów nowotworowych, a w kolumnie "diagnosis" zawiera informację o tym, czy guz jest złośliwy (M) czy łagodny (B).
 
 Instrukcje
 
